@@ -3,6 +3,7 @@ import flag from './Images/nigeria.png';
 import box from './Images/New.png';
 import iphone from './Images/Pink-Iphone.png'
 import icon from './Images/icon-step-1.png'
+import mobile from './Images/mobile-screen.png'
 import './App.css'
 import SlideShow from './Slideshow';
 
@@ -23,7 +24,6 @@ function App() {
             <p><a href='https://wa.link/07fs30'>
             Trade
             </a></p>
-            <p>Blog</p>
             <p>About Us</p>
             
           </div>
@@ -40,7 +40,7 @@ function App() {
           </p>
           <div className='input-field'>
             <input type="email" name="email" id="email" placeholder='Enter e-mail address here.' />
-            <button type="submit">
+            <button className='what' type="submit">
               <a href="https://wa.link/07fs30">
                 Get Started
                 </a>
@@ -148,6 +148,7 @@ function App() {
           alt='phone'
           className='phone'
         />
+        <img src={mobile} alt="phone" className="mobile-screen-phone" />
       </div>
       <footer className='footer-item'>
         Carp Exchange 2023. ALL RIGHTS RESERVED
