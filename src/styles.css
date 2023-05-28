@@ -13,8 +13,13 @@
     background-color: rgba(30, 136, 229, 0.06);
 }
 
+.card-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 25%;
+}
+
 .reason {
-    margin-top: 40%;
     color: #172144;
     font-style: normal;
     font-weight: 900;
