@@ -31,15 +31,47 @@ export default function SlideShow() {
         navigation={true}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <p className="reason">
+            Flexible transactions
+          </p>
+          <br />
+          <p className="why">
+            Get paid by Carp Exchange in any currency, or combination of currencies you want and buy in any currency or combinations of currencies you want.
+          </p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <p className="reason">
+            Privacy
+          </p><br />
+          <p className="why">
+            Your accounts privacy and secuirity is our utmost priority so your personal details will only be shared with your permission.
+          </p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <p className="reason">
+            Privacy
+          </p><br />
+          <p className="why">
+            Your accounts privacy and secuirity is our utmost priority so your personal details will only be shared with your permission.
+          </p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <p className="reason">
+            Privacy
+          </p><br />
+          <p className="why">
+            Your accounts privacy and secuirity is our utmost priority so your personal details will only be shared with your permission.
+          </p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <p className="reason">
+            Privacy
+          </p><br />
+          <p className="why">
+            Your accounts privacy and secuirity is our utmost priority so your personal details will only be shared with your permission.
+          </p>
+        </SwiperSlide>
       </Swiper>
     </>
   );
