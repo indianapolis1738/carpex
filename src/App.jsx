@@ -1,7 +1,7 @@
 import logo from './Images/CEX.jpg';
 import flag from './Images/nigeria.png';
 import box from './Images/New.png';
-import iphone from './Images/pink-iphone.png'
+import iphone from './Images/Pink-Iphone.png'
 import icon from './Images/icon-step-1.png'
 import './App.css'
 import SlideShow from './Slideshow';
@@ -41,7 +41,9 @@ function App() {
           <div className='input-field'>
             <input type="email" name="email" id="email" placeholder='Enter e-mail address here.' />
             <button type="submit">
-              Get Started
+              <a href="https://wa.link/07fs30">
+                Get Started
+                </a>
             </button>
           </div>
         </div>
