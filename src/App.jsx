@@ -6,6 +6,9 @@ import mobile from './Images/mobile-screen.png'
 import './App.css'
 import SlideShow from './Slideshow';
 import FetchCoin from './FetchCoin'
+import { BrowserRouter } from "react-router-dom"
+import { HashLink as Link } from 'react-router-hash-link';
+import Headroom from 'react-headroom';
 
 
 function App() {
@@ -14,20 +17,23 @@ function App() {
 
   return (
     <>
-      <div>
+    <BrowserRouter>
+        <div>
+          <Headroom>
         <nav className='navigation'>
           <img src={logo} className="logo" alt="React logo" />
 
           <div className='nav-links'>
             <img src={flag} className='flag' alt='flag' />
-            <p>Market</p>
-            <p><a href='https://wa.link/07fs30'>
+            <p><Link to='#fetchcoin' smooth>Market</Link></p>
+            <p><Link to='#trade' smooth>
             Trade
-            </a></p>
+            </Link></p>
             <p>About Us</p>
             
           </div>
-        </nav>
+            </nav>
+            </Headroom>
       </div>
       <div className='section'>
         <div className='right-section'>
@@ -54,7 +60,7 @@ function App() {
         />
       </div>
       
-      <div className='blue-box'>
+      <div className='blue-box' id="fetchcoin">
         <p className='yellow'>SECURELY BUY, SELL and TRACK</p>
         <p className='p-trade'>Trade any cryptocurrency of your choice with fiat currency using bank transfer.</p>
         <br />
@@ -81,7 +87,7 @@ function App() {
           Begin your trading journey with these easy steps
         </p>
       </div>
-      <div className="steps">
+      <div className="steps" id='trade'>
         <div className="items-step">
           <div className="first-item">
             <img src={icon} alt="icon" className="icon" />
@@ -144,7 +150,8 @@ function App() {
       </div><br /><br />
       <footer className='footer-item'>
         Carp Exchange 2023. ALL RIGHTS RESERVED
-      </footer>
+        </footer>
+        </BrowserRouter>
     </>
   )
 }

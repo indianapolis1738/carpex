@@ -11,9 +11,9 @@
   justify-content: space-between;
   width: 100%;
   cursor: pointer;
-  position: fixed;
   background-color: whitesmoke;
-  height: 50px;
+  height: 60px;
+  top: 10px;
 }
 
 .nav-links,
