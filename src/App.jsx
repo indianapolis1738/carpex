@@ -1,11 +1,11 @@
 import logo from './Images/CEX.jpg';
 import flag from './Images/nigeria.png';
 import box from './Images/New.png';
-import iphone from './Images/Pink-Iphone.png'
 import icon from './Images/icon-step-1.png'
 import mobile from './Images/mobile-screen.png'
 import './App.css'
 import SlideShow from './Slideshow';
+import FetchCoin from './FetchCoin'
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
         </nav>
       </div>
       <div className='section'>
-        <div>
+        <div className='right-section'>
           <p className='bold-buy'>
             Sell and Buy <br />
             Crypto with ease.
@@ -40,7 +40,7 @@ function App() {
           </p>
           <div className='input-field'>
             <input type="email" name="email" id="email" placeholder='Enter e-mail address here.' />
-            <button className='what' type="submit">
+            <button className='input-field-button' type="submit">
               <a href="https://wa.link/07fs30">
                 Get Started
                 </a>
@@ -53,22 +53,12 @@ function App() {
           className='box'
         />
       </div>
+      
       <div className='blue-box'>
         <p className='yellow'>SECURELY BUY, SELL and TRACK</p>
         <p className='p-trade'>Trade any cryptocurrency of your choice with fiat currency using bank transfer.</p>
-        <table className='table-div'>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Price</th>
-              <th>Change($)</th>
-              <th>Trade</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-          </tbody>
-        </table>
+        <br />
+        <FetchCoin/>
       </div>
       <div className="trusted-div">
         <div className='trusted-plat'>
@@ -143,13 +133,15 @@ function App() {
             </a>
           </button>
         </div>
+        <div className="phone-div">
         <img
-          src={iphone}
+          src={mobile}
           alt='phone'
           className='phone'
-        />
+          />
+          </div>
         <img src={mobile} alt="phone" className="mobile-screen-phone" />
-      </div>
+      </div><br /><br />
       <footer className='footer-item'>
         Carp Exchange 2023. ALL RIGHTS RESERVED
       </footer>

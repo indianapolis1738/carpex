@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.table-landing {
+    width: 90%;
+    align-content: center;
+    margin-left: 13%;
+    height: 90px;
+}
+
+.table-row {
+    color: whitesmoke;
+}
+
+td {
+    width: 25vw;
+}
+
+.coin-image {
+    height: 40px;
+    width: 40px;
+}
+
+.red {
+    color: red;
+    font-size: small;
+}
+
+.green {
+    color: green;
+    font-size: small;
+}
+
+.trade-button {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    color: #1B273F;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    .table-landing {
+        width: 90%;
+        align-content: center;
+        margin-right: 5%;
+        height: 90px;
+    }
+}
