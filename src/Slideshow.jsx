@@ -33,7 +33,6 @@ export default function SlideShow() {
           clickable: true,
         }}
         modules={[Autoplay,EffectFlip, Pagination, Navigation]}
-        navigation={true}
         className="mySwiper"
       >
         <SwiperSlide>
