@@ -9,11 +9,13 @@ import FetchCoin from './FetchCoin'
 import { BrowserRouter } from "react-router-dom"
 import { HashLink as Link } from 'react-router-hash-link';
 import Headroom from 'react-headroom';
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
 
-
+const notify = () => toast("Thank you for joining our waitlist!");
 
   return (
     <>
@@ -46,11 +48,10 @@ function App() {
           </p>
           <div className='input-field'>
             <input type="email" name="email" id="email" placeholder='Enter e-mail address here.' />
-            <button className='input-field-button' type="submit">
-              <a href="https://wa.link/07fs30">
-                Get Started
-                </a>
-            </button>
+            <button onClick={notify} className='input-field-button' type="submit">
+                Join Waitlist
+              </button>
+            <ToastContainer />
           </div>
         </div>
         <img

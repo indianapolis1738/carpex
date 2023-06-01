@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap');
 
-.swiper {
+.mySwiper {
     width: 100%;
-    height: 100%;
+    height: 40rem;
 }
 
 .swiper-slide {

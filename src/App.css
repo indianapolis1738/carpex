@@ -60,7 +60,7 @@
 .input-field {
   background-color: #F0F2F9;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   height: 50px;
   align-content: center;
   border-radius: 10px;
@@ -97,7 +97,7 @@
 .blue-box {
   margin-top: 5%;
   width: 100%;
-  height: 700px;
+  height: 750px;
   background-color: #1B273F;
 }
 
@@ -128,7 +128,7 @@
 
 .trusted-plat {
   width: 50%;
-  height: 30rem;
+  height: 40rem;
   background: #DCE4FF;
   background-image: linear-gradient(25deg, #DCE4FF, white);
 }
