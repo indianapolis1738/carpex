@@ -44,7 +44,7 @@ const notify = () => toast("Thank you for joining our waitlist!");
             Crypto with ease.
           </p>
           <p className='regular-buy'>
-            Buy and sell Bitcoin, Ethereum, XRP and many other cryptocurrencies with fiat , cryptocurrencies or your national currency 
+            Buy and sell Bitcoin, Ethereum, XRP and <br /> many other cryptocurrencies with fiat , cryptocurrencies or your national currency 
           </p>
           <div className='input-field'>
             <input type="email" name="email" id="email" placeholder='Enter e-mail address here.' />

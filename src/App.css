@@ -291,6 +291,10 @@
     padding-top: 0;
   }
 
+  .right-section {
+    width: 100%;
+  }
+
   #email {
     width: fit-content;
   }
