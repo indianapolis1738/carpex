@@ -344,4 +344,14 @@
   .phone {
     margin: 0;
   }
+
+  .bold-buy {
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+
+  .regular-buy {
+    font-size: large;
+    font-weight: bold;
+  }
 }
