@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap');
 
+
 .logo {
   width: 60px;
   height: 40px;
@@ -256,6 +257,7 @@
   width: 40%;
   height: 500px;
   align-items: center;
+  margin-bottom: 5%;
 }
 
 .phone {
@@ -319,9 +321,6 @@
     width: 100%;
   }
 
-  .phone {
-    display: none;
-  }
 
   .bold-icon-content {
     color: #1B273F;
@@ -337,8 +336,12 @@
     font-size: 12px;
   }
 
-  .mobile-screen-phone {
-    padding: 25%;
-    margin-top: 15%;
+  .phone-div {
+    margin: 30%;
+    margin-bottom: -100px;
+  }
+
+  .phone {
+    margin: 0;
   }
 }

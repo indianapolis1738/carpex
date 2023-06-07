@@ -1,0 +1,40 @@
+.title-main {
+    font-weight: bold;
+    font-size: xx-large;
+    color: gray;
+}
+
+.news-div {
+    width: 20%;
+    display: inline-flex;
+    height: 280px;
+    top: 10%;
+    margin: 2%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.title {
+    font-size: medium;
+    text-align: center;
+    color: black;
+    padding: 1%;
+}
+
+.news-content {
+    padding: 0.2%;
+    font-weight: 200;
+    font-size: small;
+    letter-spacing: 1px;
+}
+
+.link-time {
+    display: inline-flexbox;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    .news-div {
+        width: 90%;
+        margin-left: 2.5%;
+    }
+}

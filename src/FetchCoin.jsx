@@ -20,7 +20,6 @@ function FetchCoin() {
     
   return (
     <section>
-           
       {
         coin.map((crypt) => {
           return (

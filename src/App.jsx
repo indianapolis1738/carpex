@@ -9,8 +9,9 @@ import FetchCoin from './FetchCoin'
 import { BrowserRouter } from "react-router-dom"
 import { HashLink as Link } from 'react-router-hash-link';
 import Headroom from 'react-headroom';
-  import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import FetchNews from './FetchNews';
 
 
 function App() {
@@ -147,8 +148,8 @@ const notify = () => toast("Thank you for joining our waitlist!");
           className='phone'
           />
           </div>
-        <img src={mobile} alt="phone" className="mobile-screen-phone" />
-      </div><br /><br />
+        </div>
+        <FetchNews/>
       <footer className='footer-item'>
         Carp Exchange 2023. ALL RIGHTS RESERVED
         </footer>
