@@ -80,7 +80,8 @@ const notify = () => toast("Thank you for joining our waitlist!");
         <div className="lines">
           <SlideShow/>
         </div>
-      </div>
+        </div>
+        <br /><br />
       <div className="how-to">
         <p className="how-to-p">
           How to trade with confidence
