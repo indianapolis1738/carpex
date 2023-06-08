@@ -64,8 +64,8 @@ const notify = () => toast("Thank you for joining our waitlist!");
           className='box'
         />
       </div>
-      
-      <div className='blue-box' id="fetchcoin">
+      <div id="fetchcoin"></div>
+      <div className='blue-box' >
         <p className='yellow'>SECURELY BUY, SELL and TRACK</p>
         <p className='p-trade'>Trade any cryptocurrency of your choice with fiat currency using bank transfer.</p>
         <br />
