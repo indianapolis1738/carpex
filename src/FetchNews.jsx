@@ -11,7 +11,6 @@ const FetchNews = () => {
             .get('https://crypto-news-api.b4a.app/news/cointelegraph')
         
             .then((res) => {
-                console.log(res.data)
                 setNews(res.data)
                     .catch((err) => {
                         console.log(err)
