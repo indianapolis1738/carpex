@@ -2,7 +2,7 @@ import logo from './Images/CEX.jpg';
 import flag from './Images/nigeria.png';
 import box from './Images/New.png';
 import icon from './Images/icon-step-1.png'
-import mobile from './Images/mobile-screen.png'
+import mobile from './Images/Pink-Iphone.png'
 import './App.css'
 import SlideShow from './Slideshow';
 import FetchCoin from './FetchCoin'
@@ -12,6 +12,7 @@ import Headroom from 'react-headroom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import FetchNews from './FetchNews';
+import app from './Images/app.png'
 
 
 function App() {
@@ -85,7 +86,7 @@ const notify = () => toast("Thank you for joining our waitlist!");
         </div>
         </div>
         <br /><br />
-      <div className="how-to">
+      <div className="how-to" id='trade'>
         <p className="how-to-p">
           How to trade with confidence
         </p>
@@ -93,7 +94,7 @@ const notify = () => toast("Thank you for joining our waitlist!");
           Begin your trading journey with these easy steps
         </p>
       </div>
-      <div className="steps" id='trade'>
+      <div className="steps">
         <div className="items-step">
           <div className="first-item">
             <img src={icon} alt="icon" className="icon" />
@@ -145,12 +146,13 @@ const notify = () => toast("Thank you for joining our waitlist!");
             </a>
           </button>
         </div>
-        <div className="phone-div">
+          <div className="phone-div">
         <img
           src={mobile}
           alt='phone'
           className='phone'
-          />
+            />
+           
           </div>
         </div>
         <FetchNews/>

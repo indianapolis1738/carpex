@@ -184,6 +184,7 @@
 .steps {
   margin-top: 5%;
   display: inline-flex;
+  margin-bottom: 5%;
 }
 
 .items-step {
@@ -257,12 +258,11 @@
   width: 40%;
   height: 500px;
   align-items: center;
-  margin-bottom: 5%;
+  overflow: hidden;
 }
 
 .phone {
-  height: fit-content;
-  margin: 15%;
+  width: 50%;
 }
 
 .mobile-screen-phone {
@@ -277,6 +277,11 @@
   font-family: 'Open Sans', sans-serif;
   margin-top: 5%;
   text-align: center;
+}
+
+.app-store {
+  width: 80%;
+  height: 50px;
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
