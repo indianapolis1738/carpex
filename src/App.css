@@ -343,12 +343,16 @@
   }
 
   .phone-div {
-    margin: 30%;
-    margin-bottom: -100px;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 5%;
   }
 
   .phone {
-    margin: 0;
+    padding: 15%;
+    width: 70%;
   }
 
   .bold-buy {
