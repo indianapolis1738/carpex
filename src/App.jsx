@@ -12,7 +12,6 @@ import Headroom from 'react-headroom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import FetchNews from './FetchNews';
-import app from './Images/app.png'
 
 
 function App() {
