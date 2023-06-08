@@ -20,20 +20,24 @@ const FetchNews = () => {
     }, []);
 
     return (
-        <section>
-            <h2 className="title-main">News</h2>
+        <section className="section-news">
+            <h2 className="title-main">Blog & Publications</h2>
+            <p className="small-title">
+                Get the latest news and publications from our blog
+            </p>
             {
                 news.map((report) => {
                     return (
                         <div key={report.title} className="news-div">
                             <div>
-                            <h4 className="title">{report.title}</h4>
-                                <p className="news-content">{report.desc}</p>
                                 <div className="link-time">
-                                    <a href={report.url}>Read full news</a>
+                                    <p>{report.author}</p>
                                     <p>{report.date}</p>
                                 </div>
-                            
+                            <h4 className="title">{report.title}</h4>
+                                <p className="news-content">{report.desc}</p>
+                                
+                            <a href={report.url}>Read full news</a>
 
                             </div>
                         </div>

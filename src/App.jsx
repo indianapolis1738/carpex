@@ -21,10 +21,13 @@ const notify = () => toast("Thank you for joining our waitlist!");
   return (
     <>
     <BrowserRouter>
-        <div>
+        <div id='navb'>
           <Headroom>
-        <nav className='navigation'>
-          <img src={logo} className="logo" alt="React logo" />
+            <nav className='navigation' >
+              <Link to='#navb'>
+              <img src={logo} className="logo" alt="React logo" />
+              </Link>
+          
 
           <div className='nav-links'>
             <img src={flag} className='flag' alt='flag' />
@@ -107,10 +110,10 @@ const notify = () => toast("Thank you for joining our waitlist!");
             <img src={icon} alt="icon" className="icon" />
             <div className="icon-content">
               <p className="bold-icon-content">
-                Create your account
+               Verify your account
               </p>
               <p className="small-icon-content">
-                Enter your e-mail adress and other sign up details to  create your account successfully.
+                After creating your account take the identity verification and authentication questions for secure account and safe transactions.
               </p>
             </div>
           </div>
@@ -118,10 +121,10 @@ const notify = () => toast("Thank you for joining our waitlist!");
             <img src={icon} alt="icon" className="icon" />
             <div className="icon-content">
               <p className="bold-icon-content">
-                Create your account
+                Fuel your account
               </p>
               <p className="small-icon-content">
-                Enter your e-mail adress and other sign up details to  create your account successfully.
+              Add funds to your crypto account through bank transfer  and start trading crypto whenever you choose to.
               </p>
             </div>
           </div>
@@ -129,10 +132,10 @@ const notify = () => toast("Thank you for joining our waitlist!");
             <img src={icon} alt="icon" className="icon" />
             <div className="icon-content">
               <p className="bold-icon-content">
-                Create your account
+               Start Trading
               </p>
               <p className="small-icon-content">
-                Enter your e-mail adress and other sign up details to  create your account successfully.
+               You heard right! You have the free pass to buy and sell crypto curriences of your choice from the top rated to other varities.
               </p>
             </div>
           </div>
