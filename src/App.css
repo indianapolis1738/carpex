@@ -304,7 +304,11 @@
   }
 
   #email {
-    width: fit-content;
+    width: 60%;
+  }
+
+  .input-field-button {
+    width: 35%;
   }
 
   .trusted-div {
