@@ -9,14 +9,37 @@ import FetchCoin from './FetchCoin'
 import { BrowserRouter } from "react-router-dom"
 import { HashLink as Link } from 'react-router-hash-link';
 import Headroom from 'react-headroom';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import FetchNews from './FetchNews';
+import { useState } from 'react';
+import supabase from './Supabase/SupaBase'
 
 
 function App() {
 
-const notify = () => toast("Thank you for joining our waitlist!");
+  console.log(import.meta.env.VITE_REACT_APP_ANON_KEY)
+
+  //const notify = () => toast("Thank you for joining our waitlist!");
+
+  const [email, setEmail] = useState('');
+
+  
+  async function createUser() {
+    try {
+      const {  error } = await supabase 
+        .from('users')
+        .insert({
+        email: email
+        })
+        .single()
+      
+      if (error) throw error;
+
+    } catch (error) {
+      alert(error.message);
+    }
+  }
 
   return (
     <>
@@ -51,8 +74,8 @@ const notify = () => toast("Thank you for joining our waitlist!");
              Join our waitlist to stay informed when we launch our new product and services. 🤩
           </p>
           <div className='input-field'>
-            <input type="email" name="email" id="email" placeholder='Enter e-mail address here.' />
-            <button onClick={notify} className='input-field-button' type="submit">
+            <input onChange={(e) => setEmail(e.target.value)} type="text" name="email" id="email" placeholder='Enter e-mail address here.' />
+            <button onClick={() => createUser() } className='input-field-button' type="submit">
                 Join Waitlist
               </button>
             <ToastContainer />
@@ -64,7 +87,8 @@ const notify = () => toast("Thank you for joining our waitlist!");
           className='box'
         />
       </div>
-      <div id="fetchcoin"></div>
+        <div
+          id="fetchcoin"></div>
       <div className='blue-box' >
         <p className='yellow'>SECURELY BUY, SELL and TRACK</p>
         <p className='p-trade'>Trade any cryptocurrency of your choice with fiat currency using bank transfer.</p>
