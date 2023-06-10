@@ -36,6 +36,8 @@ function App() {
       
       if (error) throw error;
 
+      alert('Data submitted successfully')
+
     } catch (error) {
       alert(error.message);
     }
